@@ -95,5 +95,5 @@ function ShellSort(arrayToSort){
 document.write("неотсортированный массив: " + unsortedArray);
 // document.write("<br> сортировка выбором: " + SelectSort(unsortedArray));
 // document.write("<br> сортировка пузырьком: " + BubbleSort(unsortedArray));
-// document.write("<br> сортировка вставками: " + InsertSort(unsortedArray));
-document.write("<br> сортировка Shell: " + ShellSort(unsortedArray));
+document.write("<br> сортировка вставками: " + InsertSort(unsortedArray));
+// document.write("<br> сортировка Shell: " + ShellSort(unsortedArray));
