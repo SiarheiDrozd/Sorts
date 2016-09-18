@@ -42,14 +42,20 @@ List.prototype.print = function(){
         }
     }
 };
+List.prototype.remove = function(elem){
+    var prev = elem.prev;
+    var next = elem.next;
+    prev.next = next;
+    next.prev = prev;
+    delete elem;
+};
 
 var list = new List();
 list.add(new Element(4));
 list.add(new Element("4"));
-list.add(new Element(5));
+var a = new Element("e");
+list.add(a);
 list.add(new Element(21321));
 list.add(new Element(-9));
-list.print();
-list.pop();
-list.pop();
+list.remove(a);
 list.print();
